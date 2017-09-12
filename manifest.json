@@ -1,0 +1,14 @@
+{
+  "description": "removes the new(and annoying) page chat section on the chat window",
+  "manifest_version": 2,
+  "author": "sam9116",
+  "name": "Facebook Page Chat remover",
+  "version": "1.0",
+  "homepage_url": "https://github.com/sam9116/facebook_page_chat_remover",
+  "content_scripts": [
+    {
+      "matches": [ "*://*.facebook.com/*" ],
+      "js": [ "invite_chat_disable.js" ]
+    }
+  ]
+}
